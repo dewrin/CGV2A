@@ -5,7 +5,7 @@ import { handleLogin } from '../utils/function';
 const Login = ({ theme, setAuthentication }) => {
   return (
     <section className={`Login Login-${theme}`}>
-      <form className={`login-form login-form-${theme}`} onSubmit={(e) => handleLogin(e, setAuthentication)}>
+      <form className={`login-form login-form-${theme}`} onSubmit={(e) => handleLogin(e, setAuthentication, theme)}>
         <h1 className={`login-form-logo`}>Insert title here..</h1>
         <input
           className={`login-form-input login-form-input-${theme}`}
