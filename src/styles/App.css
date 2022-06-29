@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
+
+:root {
+  --background-light-primary: #ffffff;
+  --background-light-secondary: #f9f9f9;
+  --background-light-tertiary: #e0e0e0;
+  --typography-light: #000000;
+
+  --background-dark-primary: #1f1f1f;
+  --background-dark-secondary: #252526;
+  --background-dark-tertiary: #3b3b3c;
+  --typography-dark: #ffffff;
+}
