@@ -2,12 +2,15 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { useState } from 'react';
 import './styles/App.css';
 
+import Login from './pages/Login';
+
 function App() {
   const [authentication, setAuthentication] = useState({
-    isAuthenticated: true,
+    isAuthenticated: false,
+    theme: 'dark',
   });
 
-  const { isAuthenticated } = authentication;
+  const { isAuthenticated, theme } = authentication;
 
   if (isAuthenticated) {
     return (
@@ -28,9 +31,9 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<h1>HOMEPAGE</h1>} />
-          <Route path="/login" element={<h1>LOGIN</h1>} />
+          <Route path="/login" element={<Login theme={theme} setAuthentication={setAuthentication} />} />
           <Route path="/create" element={<h1>CREATE</h1>} />
-          <Route path="/*" element={<Navigate to="/login" />} />
+          <Route path="/*" element={<Navigate to="/" />} />
         </Routes>
       </BrowserRouter>
     );
