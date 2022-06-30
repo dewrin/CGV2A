@@ -5,6 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import './styles/App.css';
 
 import Login from './pages/Login';
+import Create from './pages/Create';
 
 function App() {
   const [authentication, setAuthentication] = useState({
@@ -39,7 +40,7 @@ function App() {
           <Routes>
             <Route path="/" element={<h1>HOMEPAGE</h1>} />
             <Route path="/login" element={<Login theme={theme} setAuthentication={setAuthentication} />} />
-            <Route path="/create" element={<h1>CREATE</h1>} />
+            <Route path="/create" element={<Create theme={theme} setAuthentication={setAuthentication} />} />
             <Route path="/*" element={<Navigate to="/" />} />
           </Routes>
         </BrowserRouter>
