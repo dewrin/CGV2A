@@ -8,12 +8,34 @@ export async function fetchUserdataPassword(username) {
   try {
     const { data } = await server.get('/userdata/password', { params: { username } });
     return data.message.password;
-  } catch (e) {}
+  } catch (e) {
+    console.clear();
+  }
 }
 
 export async function fetchUserdata(username) {
   try {
     const { data } = await server.get('/userdata', { params: { username } });
     return data.message;
-  } catch (e) {}
+  } catch (e) {
+    console.clear();
+  }
+}
+
+export async function postUserdata(userid, username, password, avatar, joindate, cards, trades, currency, packs) {
+  try {
+    return await server.post('/userdata', {
+      userid,
+      username,
+      password,
+      avatar,
+      joindate,
+      cards,
+      trades,
+      currency,
+      packs,
+    });
+  } catch (e) {
+    console.clear();
+  }
 }
