@@ -1,10 +1,18 @@
 import '../styles/Create.css';
+import dark from '../assets/dark.png';
+import light from '../assets/light.png';
 
 import { handleCreate } from '../utils/function';
 
 const Create = ({ theme, setAuthentication }) => {
   return (
     <section className={`Create Create-${theme}`}>
+      <img
+        className={`create-theme-switch`}
+        src={theme === 'light' ? light : dark}
+        alt="theme"
+        onClick={() => setAuthentication((prev) => ({ ...prev, theme: theme === 'light' ? 'dark' : 'light' }))}
+      />
       <form className={`create-form create-form-${theme}`} onSubmit={(e) => handleCreate(e, setAuthentication, theme)}>
         <h1 className={`create-form-logo`}>Insert title here..</h1>
         <input

@@ -15,6 +15,15 @@
   background-color: var(--background-dark-primary);
 }
 
+.create-theme-switch {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  width: 26px;
+  cursor: pointer;
+}
+
 .create-form {
   display: flex;
   flex-direction: column;
