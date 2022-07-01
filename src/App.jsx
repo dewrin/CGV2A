@@ -4,6 +4,8 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './styles/App.css';
 
+import Navigation from './components/Navigation';
+
 import Login from './pages/Login';
 import Create from './pages/Create';
 
@@ -19,6 +21,7 @@ function App() {
     return (
       <>
         <ToastContainer />
+        <Navigation />
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<h1>HOMEPAGE</h1>} />
