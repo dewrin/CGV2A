@@ -10,7 +10,7 @@ import Create from './pages/Create';
 function App() {
   const [authentication, setAuthentication] = useState({
     isAuthenticated: false,
-    theme: 'dark',
+    theme: 'light',
   });
 
   const { isAuthenticated, theme } = authentication;
