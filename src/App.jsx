@@ -12,42 +12,38 @@ import Create from './pages/Create';
 function App() {
   const [authentication, setAuthentication] = useState({
     isAuthenticated: false,
-    theme: 'light',
+    theme: 'dark',
   });
 
   const { isAuthenticated, theme } = authentication;
 
   if (isAuthenticated) {
     return (
-      <>
+      <BrowserRouter>
         <ToastContainer />
-        <Navigation />
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<h1>HOMEPAGE</h1>} />
-            <Route path="/login" element={<Navigate to="/profile" />} />
-            <Route path="/create" element={<Navigate to="/profile" />} />
-            <Route path="/profile" element={<h1>PROFILE</h1>} />
-            <Route path="/*" element={<h1>404 PAGE NOT FOUND</h1>} />
-          </Routes>
-        </BrowserRouter>
-      </>
+        <Navigation theme={theme} />
+        <Routes>
+          <Route path="/" element={<h1>HOMEPAGE</h1>} />
+          <Route path="/login" element={<Navigate to="/profile" />} />
+          <Route path="/create" element={<Navigate to="/profile" />} />
+          <Route path="/profile" element={<h1>PROFILE</h1>} />
+          <Route path="/*" element={<h1>404 PAGE NOT FOUND</h1>} />
+        </Routes>
+      </BrowserRouter>
     );
   }
 
   if (!isAuthenticated) {
     return (
-      <>
+      <BrowserRouter>
         <ToastContainer />
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<h1>HOMEPAGE</h1>} />
-            <Route path="/login" element={<Login theme={theme} setAuthentication={setAuthentication} />} />
-            <Route path="/create" element={<Create theme={theme} setAuthentication={setAuthentication} />} />
-            <Route path="/*" element={<Navigate to="/" />} />
-          </Routes>
-        </BrowserRouter>
-      </>
+        <Routes>
+          <Route path="/" element={<h1>HOMEPAGE</h1>} />
+          <Route path="/login" element={<Login theme={theme} setAuthentication={setAuthentication} />} />
+          <Route path="/create" element={<Create theme={theme} setAuthentication={setAuthentication} />} />
+          <Route path="/*" element={<Navigate to="/" />} />
+        </Routes>
+      </BrowserRouter>
     );
   }
 }
