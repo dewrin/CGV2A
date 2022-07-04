@@ -4,7 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 import '../styles/Navigation.css';
 import banner from '../assets/banner.png';
 
-const Navigation = ({ theme }) => {
+const Navigation = ({ theme, setAuthentication }) => {
   const { pathname } = useLocation();
   return (
     <nav className={`navigation navigation-${theme}`}>
@@ -39,6 +39,10 @@ const Navigation = ({ theme }) => {
           Store
         </Link>
       </div>
+      <div
+        className={`settings settings-${theme}`}
+        onClick={() => setAuthentication((prev) => ({ ...prev, theme: theme === 'light' ? 'dark' : 'light' }))}
+      ></div>
     </nav>
   );
 };
