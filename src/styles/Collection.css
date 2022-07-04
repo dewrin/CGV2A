@@ -1,0 +1,12 @@
+.collection-title {
+  font-size: 2em;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.collection-hr-light {
+  border-color: #000000;
+}
+.collection-hr-dark {
+  border-color: #ffffff;
+}
