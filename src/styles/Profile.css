@@ -1,0 +1,12 @@
+.profile-title {
+  font-size: 2em;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.profile-hr-light {
+  border-color: #000000;
+}
+.profile-hr-dark {
+  border-color: #ffffff;
+}
