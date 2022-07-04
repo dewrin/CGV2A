@@ -1,10 +1,12 @@
 import { MdOutlineLocalGroceryStore } from 'react-icons/md';
 import { CgProfile, CgCardHearts } from 'react-icons/cg';
+import { TbSettings } from 'react-icons/tb';
 import { Link, useLocation } from 'react-router-dom';
+import { toast } from 'react-toastify';
 import '../styles/Navigation.css';
 import banner from '../assets/banner.png';
 
-const Navigation = ({ theme, setAuthentication }) => {
+const Navigation = ({ theme, authentication, setAuthentication }) => {
   const { pathname } = useLocation();
   return (
     <nav className={`navigation navigation-${theme}`}>
@@ -39,10 +41,28 @@ const Navigation = ({ theme, setAuthentication }) => {
           Store
         </Link>
       </div>
-      <div
-        className={`settings settings-${theme}`}
-        onClick={() => setAuthentication((prev) => ({ ...prev, theme: theme === 'light' ? 'dark' : 'light' }))}
-      ></div>
+      <div className={`userinfo userinfo-${theme}`}>
+        <img className={`userinfo-avatar`} src={authentication.avatar} alt="Avatar" />
+        <div className={`userinfo-text`}>
+          <div className={`userinfo-username`}>
+            {authentication.username.slice(0, 1).toUpperCase()}
+            {authentication.username.slice(1)}
+          </div>
+          <div
+            className={`userinfo-userid`}
+            onClick={() => {
+              navigator.clipboard.writeText(authentication.userid);
+              toast.success('Copied to clipboard!', { theme: theme });
+            }}
+          >
+            {authentication.userid}
+          </div>
+        </div>
+        <TbSettings
+          className={`userinfo-settings-icon`}
+          onClick={() => setAuthentication((prev) => ({ ...prev, theme: theme === 'light' ? 'dark' : 'light' }))}
+        />
+      </div>
     </nav>
   );
 };

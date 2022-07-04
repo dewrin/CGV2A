@@ -24,7 +24,7 @@ function App() {
     return (
       <BrowserRouter>
         <ToastContainer />
-        <Navigation theme={theme} setAuthentication={setAuthentication} />
+        <Navigation theme={theme} authentication={authentication} setAuthentication={setAuthentication} />
         <div className={`page page-${theme}`}>
           <Routes>
             <Route path="/" element={<h1>HOMEPAGE</h1>} />
