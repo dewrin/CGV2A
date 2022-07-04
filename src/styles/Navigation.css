@@ -35,21 +35,23 @@
 }
 
 .navigation-input {
+  margin-bottom: 12px;
   padding: 0px 15px;
   width: calc(80% - 30px);
   height: 30px;
   border-radius: 6px;
   align-self: center;
+  border: none;
 }
 .navigation-input-light {
   color: var(--typography-light);
   background-color: var(--background-light-primary);
-  border: 2px solid #e6e6e7;
+  border: 1px solid #e6e6e7;
 }
 .navigation-input-dark {
   color: var(--typography-dark);
   background-color: var(--background-dark-primary);
-  border: 2px solid #39393b;
+  border: 1px solid #39393b;
 }
 
 .navigation-link {
@@ -57,7 +59,7 @@
   align-items: center;
   margin-top: 6px;
   padding: 0px 10px;
-  width: calc(80% - 20px + 4px);
+  width: calc(80% - 20px + 2px);
   height: 30px;
   border-radius: 6px;
   text-align: left;
