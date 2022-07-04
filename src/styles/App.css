@@ -21,3 +21,18 @@ body {
   height: 100%;
   overflow: auto;
 }
+
+.page {
+  position: absolute;
+  right: 0;
+  width: calc(100% - 260px);
+  min-height: 100vh;
+}
+.page-light {
+  color: var(--typography-light);
+  background-color: var(--background-light-primary);
+}
+.page-dark {
+  color: var(--typography-dark);
+  background-color: var(--background-dark-primary);
+}
