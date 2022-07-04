@@ -10,6 +10,7 @@ import Login from './pages/Login';
 import Create from './pages/Create';
 import Profile from './pages/Profile';
 import Collection from './pages/Collection';
+import Store from './pages/Store';
 
 function App() {
   const [authentication, setAuthentication] = useState({
@@ -31,7 +32,7 @@ function App() {
             <Route path="/create" element={<Navigate to="/profile" />} />
             <Route path="/profile" element={<Profile theme={theme} />} />
             <Route path="/collection" element={<Collection theme={theme} />} />
-            <Route path="/store" element={<h1>STORE</h1>} />
+            <Route path="/store" element={<Store theme={theme} />} />
             <Route path="/*" element={<h1>404 PAGE NOT FOUND</h1>} />
           </Routes>
         </div>

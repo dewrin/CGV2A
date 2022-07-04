@@ -1,0 +1,12 @@
+.store-title {
+  font-size: 2em;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.store-hr-light {
+  border-color: #000000;
+}
+.store-hr-dark {
+  border-color: #ffffff;
+}
