@@ -17,10 +17,20 @@
   border-right: 1px solid var(--background-dark-tertiary);
 }
 
-.navigation-logo {
-  font-weight: 700;
-  font-size: 28px;
-  font-family: 'Grape Nuts', cursive;
+.navigation-banner {
+  width: 100%;
+}
+.navigation-banner-light {
+  border-bottom: 1px solid var(--background-light-tertiary);
+}
+.navigation-banner-dark {
+  border-bottom: 1px solid var(--background-dark-tertiary);
+}
+
+.navigation-inputs {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
 }
 
 .navigation-input {

@@ -2,13 +2,14 @@ import { MdOutlineLocalGroceryStore } from 'react-icons/md';
 import { CgProfile, CgCardHearts } from 'react-icons/cg';
 import { Link, useLocation } from 'react-router-dom';
 import '../styles/Navigation.css';
+import banner from '../assets/banner.png';
 
 const Navigation = ({ theme }) => {
   const { pathname } = useLocation();
   return (
     <nav className={`navigation navigation-${theme}`}>
-      <h1 className={`navigation-logo`}>Insert title here..</h1>
-      <div className="flex" style={{ display: 'flex', flexDirection: 'column' }}>
+      <img className={`navigation-banner navigation-banner-${theme}`} src={banner} alt="Nayeon" />
+      <div className={`navigation-inputs`}>
         <input className={`navigation-input navigation-input-${theme}`} type="text" placeholder="Search..." />
         <Link
           className={`navigation-link navigation-link-${theme} ${
