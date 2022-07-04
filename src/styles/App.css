@@ -12,21 +12,15 @@
   --typography-dark: #ffffff;
 }
 
-html {
-  height: 100%;
-  overflow: hidden;
-}
-
 body {
-  height: 100%;
-  overflow: auto;
+  overscroll-behavior: none;
 }
 
 .page {
   position: absolute;
   right: 0;
-  padding: 0px 30px;
-  width: calc(100% - 260px - 60px);
+  padding: 0px 50px;
+  width: calc(100% - 260px - 100px);
   min-height: 100vh;
 }
 .page-light {
