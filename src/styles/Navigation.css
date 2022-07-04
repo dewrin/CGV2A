@@ -42,6 +42,10 @@
   border-radius: 6px;
   align-self: center;
   border: none;
+  outline: none;
+}
+.navigation-input:focus-visible {
+  outline: 1px solid #ef5af5;
 }
 .navigation-input-light {
   color: var(--typography-light);
@@ -65,6 +69,10 @@
   text-align: left;
   text-decoration: none;
   align-self: center;
+  outline: none;
+}
+.navigation-link:focus-visible {
+  outline: 1px solid #ef5af5;
 }
 .navigation-link-light {
   color: var(--typography-light);
