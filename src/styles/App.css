@@ -25,7 +25,8 @@ body {
 .page {
   position: absolute;
   right: 0;
-  width: calc(100% - 260px);
+  padding: 0px 30px;
+  width: calc(100% - 260px - 60px);
   min-height: 100vh;
 }
 .page-light {
