@@ -5,6 +5,7 @@
   width: 260px;
   height: 100vh;
   text-align: center;
+  z-index: 1;
 }
 .navigation-light {
   color: var(--typography-light);
