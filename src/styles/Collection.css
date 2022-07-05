@@ -10,3 +10,13 @@
 .collection-hr-dark {
   border-color: #ffffff;
 }
+
+.collection-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.collection-card {
+  height: 260px;
+}
