@@ -40,3 +40,10 @@ export async function postUserdata(userid, username, password, avatar, joindate,
     });
   } catch (e) {}
 }
+
+export async function fetchUsercardsUserid(userid) {
+  try {
+    const { data } = await server.get('/usercards/userid', { params: { userid } });
+    return data.message;
+  } catch (e) {}
+}
