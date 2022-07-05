@@ -2,7 +2,7 @@ import '../styles/Create.css';
 import dark from '../assets/dark.png';
 import light from '../assets/light.png';
 
-import { handleCreate } from '../utils/function';
+import { handleCreate } from '../utils/create';
 
 const Create = ({ theme, setAuthentication }) => {
   return (

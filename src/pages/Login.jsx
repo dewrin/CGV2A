@@ -2,7 +2,7 @@ import '../styles/Login.css';
 import dark from '../assets/dark.png';
 import light from '../assets/light.png';
 
-import { handleLogin } from '../utils/function';
+import { handleLogin } from '../utils/login';
 
 const Login = ({ theme, setAuthentication }) => {
   return (
