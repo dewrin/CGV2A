@@ -1,0 +1,12 @@
+.uprofile-title {
+  font-size: 2em;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.uprofile-hr-light {
+  border-color: #000000;
+}
+.uprofile-hr-dark {
+  border-color: #ffffff;
+}

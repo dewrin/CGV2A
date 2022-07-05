@@ -2,23 +2,34 @@ import { MdOutlineLocalGroceryStore } from 'react-icons/md';
 import { CgProfile, CgCardHearts } from 'react-icons/cg';
 import { TbSettings } from 'react-icons/tb';
 import { BsSearch } from 'react-icons/bs';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import { useState } from 'react';
 import '../styles/Navigation.css';
 import banner from '../assets/banner.png';
 
-import { handleSearch } from '../utils/function';
-
 const Navigation = ({ theme, authentication, setAuthentication }) => {
+  const [search, setSearch] = useState('');
   const { pathname } = useLocation();
+  const navigate = useNavigate();
+
   return (
     <nav className={`navigation navigation-${theme}`}>
       <img className={`navigation-banner navigation-banner-${theme}`} src={banner} alt="Nayeon" />
       <div className={`navigation-inputs`}>
-        <form className={'navigation-form'} onSubmit={(e) => handleSearch(e)}>
+        <form
+          className={'navigation-form'}
+          onSubmit={(e) => {
+            e.preventDefault();
+            navigate(`/u/${e.target[0].value}`);
+            setSearch('');
+          }}
+        >
           <input
             className={`navigation-form-input navigation-form-input-${theme}`}
             type="text"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
             placeholder="Search..."
           />
           <button className={`navigation-form-input-submit`} type="submit">
