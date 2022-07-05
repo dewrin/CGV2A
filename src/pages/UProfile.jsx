@@ -17,14 +17,13 @@ const UProfile = ({ theme }) => {
       <section className={`UProfile UProfile-${theme}`}>
         <h1 className={`uprofile-title`}>USER PROFILE</h1>
         <hr className={`uprofile-hr-${theme}`} />
-        <h1>USERNAME: {user.username}</h1>
-        <h1>USERID: {user.userid}</h1>
-        <h1>AVATAR: {user.avatar}</h1>
-        <h1>JOINDATE: {user.joindate}</h1>
-        <h1>CURRENCY: {user.currency}</h1>
-        <h1>CARDS: {user.cards}</h1>
-        <h1>TRADES: {user.trades}</h1>
-        <h1>PACKS: {user.packs}</h1>
+        <div className={`profile-info`}>
+          <img className={`profile-info-avatar`} src={user.avatar} alt="Avatar" />
+          <div className={`profile-info-text`}>
+            <h2 className={`profile-info-username`}>{user.username}</h2>
+            <h3 className={`profile-info-userid`}>{user.userid}</h3>
+          </div>
+        </div>
       </section>
     );
   }
