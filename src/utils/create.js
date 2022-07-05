@@ -51,6 +51,7 @@ export const handleCreate = async (e, setAuthentication, theme) => {
     cards: cards,
     trades: trades,
     packs: packs,
+    usercards: [],
   }));
 };
 
