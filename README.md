@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+## CGV2A - Card Game V2 Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![An illustration showing a variety of differently themed Octocats. Monuments from different cities are indicated in the background like the Space Needle, Berlin Fernsehturm and Transamerica Pyramid.](./assets/banner.jpeg)
 
-## Available Scripts
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis blanditiis atque itaque veritatis dolore molestiae perspiciatis fuga deserunt vitae dolorum quo odio expedita quidem beatae a aliquam, mollitia ullam unde esse illum adipisci suscipit nostrum. Ullam architecto sapiente reprehenderit repellendus a facere illum commodi, nihil pariatur magnam quaerat sit blanditiis esse voluptas dolore illo, animi unde et dolor nulla obcaecati distinctio totam nemo! Ex mollitia reprehenderit vero earum cumque, qui cupiditate, illum provident inventore velit delectus dicta ad explicabo quasi possimus fugit obcaecati. Libero fuga magni distinctio, alias autem harum non nihil totam aperiam dignissimos ad. Quis, aut ut. Animi.
 
-In the project directory, you can run:
+## Useful Links
 
-### `npm start`
+- [ ] [Live Application]()
+- [ ] [How to play]()
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [x] [Application Repository](https://github.com/gwdawson/CGV2A)
+- [x] [Server Repository](https://github.com/gwdawson/CGV2S)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting started
 
-### `npm test`
+```yaml
+$ git clone https://github.com/gwdawson/CGV2A.git
+# Clones the repository into the current directory.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+$ cd CGV2A
+# Changes the current directory to the application directory.
 
-### `npm run build`
+$ npm install
+# Installs all the dependencies.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+you can run several commands:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+$ npm start
+# Starts the development server.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+$ npm run build
+# Bundles the app into static files for production.
 
-### `npm run eject`
+$ npm test
+# Starts the test runner.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+$ npm run eject
+# Removes this tool and copies build dependencies, configuration files
+# and scripts into the app directory. If you do this, you can’t go back!
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# License
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+All repositories distributed under the NULL License. See [`NULL`]() for more information.
