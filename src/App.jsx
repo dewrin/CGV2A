@@ -31,7 +31,7 @@ function App() {
             <Route path="/" element={<h1>HOMEPAGE</h1>} />
             <Route path="/login" element={<Navigate to="/profile" />} />
             <Route path="/create" element={<Navigate to="/profile" />} />
-            <Route path="/profile" element={<Profile theme={theme} />} />
+            <Route path="/profile" element={<Profile theme={theme} authentication={authentication} />} />
             <Route path="/u/:authentication" element={<UProfile theme={theme} />} />
             <Route path="/collection" element={<Collection theme={theme} />} />
             <Route path="/store" element={<Store theme={theme} />} />
