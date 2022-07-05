@@ -10,10 +10,7 @@ const Profile = ({ theme, authentication }) => {
       <div className={`profile-info`}>
         <img className={`profile-info-avatar`} src={authentication.avatar} alt="Avatar" />
         <div className={`profile-info-text`}>
-          <h2 className={`profile-info-username`}>
-            {authentication.username.slice(0, 1).toUpperCase()}
-            {authentication.username.slice(1)}
-          </h2>
+          <h2 className={`profile-info-username`}>{authentication.username}</h2>
           <h3 className={`profile-info-userid`}>{authentication.userid}</h3>
         </div>
       </div>

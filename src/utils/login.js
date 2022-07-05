@@ -18,7 +18,7 @@ export const handleLogin = async (e, setAuthentication, theme) => {
     ...prevState,
     isAuthenticated: true,
     userid: userdata.userid,
-    username: formUsername,
+    username: userdata.username,
     avatar: userdata.avatar,
     joindate: userdata.joindate,
     currency: userdata.currency,

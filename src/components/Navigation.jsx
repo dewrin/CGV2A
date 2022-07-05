@@ -69,10 +69,7 @@ const Navigation = ({ theme, authentication, setAuthentication }) => {
       <div className={`userinfo userinfo-${theme}`}>
         <img className={`userinfo-avatar`} src={authentication.avatar} alt="Avatar" />
         <div className={`userinfo-text`}>
-          <div className={`userinfo-username`}>
-            {authentication.username.slice(0, 1).toUpperCase()}
-            {authentication.username.slice(1)}
-          </div>
+          <div className={`userinfo-username`}>{authentication.username}</div>
           <div
             className={`userinfo-userid`}
             onClick={() => {
