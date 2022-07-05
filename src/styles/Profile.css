@@ -10,3 +10,30 @@
 .profile-hr-dark {
   border-color: #ffffff;
 }
+
+.profile-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.profile-info-avatar {
+  width: 212px;
+  height: 212px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.profile-info-text {
+  margin-left: 20px;
+}
+
+.profile-info-username {
+  font-size: 2em;
+  font-weight: 700;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+.profile-info-userid {
+  margin: 0px;
+}
