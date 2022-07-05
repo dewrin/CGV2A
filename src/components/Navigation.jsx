@@ -21,7 +21,7 @@ const Navigation = ({ theme, authentication, setAuthentication }) => {
           className={'navigation-form'}
           onSubmit={(e) => {
             e.preventDefault();
-            navigate(`/u/${e.target[0].value}`);
+            navigate(`/u/${e.target[0].value.toLowerCase()}`);
             setSearch('');
           }}
         >
