@@ -93,3 +93,8 @@ export const createUserid = async () => {
   if (user) return createUserid();
   return array.join('');
 };
+
+export const handleSearch = async (e) => {
+  e.preventDefault();
+  console.log('SEARCH', e.target[0].value);
+};
