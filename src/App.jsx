@@ -33,7 +33,7 @@ function App() {
             <Route path="/create" element={<Navigate to="/profile" />} />
             <Route path="/profile" element={<Profile theme={theme} authentication={authentication} />} />
             <Route path="/u/:authentication" element={<UProfile theme={theme} />} />
-            <Route path="/collection" element={<Collection theme={theme} />} />
+            <Route path="/collection" element={<Collection theme={theme} authentication={authentication} />} />
             <Route path="/store" element={<Store theme={theme} />} />
             <Route path="/*" element={<h1>404 PAGE NOT FOUND</h1>} />
           </Routes>
